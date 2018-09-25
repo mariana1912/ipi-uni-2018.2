@@ -18,7 +18,7 @@ class HomeScreen extends React.Component {
         <Button
           title="Ir para AV1"
           onPress={() => {
-            /* 1. Navigate to the Details route with params */
+            
             this.props.navigation.navigate('Details', {
               itemId: 86,
               otherParam: 'anything you want here',
@@ -32,7 +32,7 @@ class HomeScreen extends React.Component {
 
 class DetailsScreen extends React.Component {
   render() {
-    /* 2. Get the param, provide a fallback value if not available */
+   
     const { navigation } = this.props;
     const itemId = navigation.getParam('itemId', 'NO-ID');
     const otherParam = navigation.getParam('otherParam', 'some default value');
